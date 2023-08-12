@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11</title>
+    <!-- bootstrap start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- bootstrap end -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav section start -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="image/vecteezy_logo.jpg">
+          <!-- nav toggle section -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav toggle section -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent navbarToggle">
+            <ul class="navbar-nav nav nav-tabs me-auto mb-2 mb-lg-0" id="myTab">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" data-toggle="tab" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Other Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Facebook Ads</a></li>
+                  <li><a class="dropdown-item" href="#">Google Ads</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">For other services contact me</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Nav section end -->
+
+<!-- Bootstrap Modal section start -->
+<div class="container navbar-expand-lg">
+    <h2 class="py-3 text-center">Bootstrap Modal</h2>
+
+    <div class=" row py-3 justify-content-center">
+        <div class="col-md-3">
+            <div class="text-center">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Launch Modal
+                </button>
+            </div>
+            <div class="modal fade" id="myModal" data-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Title</h5>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis maiores ipsa eveniet impedit aliquam pariatur fugit aut illum porro ullam?
+                        </div>
+                        <div class="modal-footer">
+                            <button class=" btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap Modal section end -->
+
+<hr>
+<br>
+<br>
+
+<!-- Bootstrap Tabs section start -->
+<div class="tab-content py-3" id="myTabContent">
+    <div class="tab-pane fade show active" id="home">
+        <h2 class="text-center mb-2">Home</h2>
+        <p class="text-center">Home content here...</p>
+    </div>
+    <div class="tab-pane" id="portfolio">
+        <h2 class="text-center mb-2">Portfolio</h2>
+        <p class="text-center">Portfolio content here...</p>
+    </div>
+</div>
+<!-- Bootstrap Tabs section end -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<!-- Bootstrap progress start -->
+<br>
+<h2 class="text-center">Bootstrap progress</h2>
+
+<br>
+<div class="progress text-center">
+    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="25%" aria-valuemin="0%" aria-valuemax="100%">0%</div>
+</div>
+<br>
+<div class="progress text-center">
+    <div class="progress-bar w-25 bg-warning" role="progressbar" aria-valuenow="25%" aria-valuemin="0%" aria-valuemax="100%">25%</div>
+</div>
+<br>
+<div class="progress text-center">
+    <div class="progress-bar w-50 bg-info" role="progressbar" ariavaluenow="50%" aria-valuemin="0%" aria-valuemax="100%">50%</div>
+</div>
+<br>
+<div class="progress text-center">
+    <div class="progress-bar w-75 bg-primary" role="progressbar" ariavaluenow="75%" aria-valuemin="0%" aria-valuemax="100%">75%</div>
+</div>
+<br>
+<div class="progress text-center">
+    <div class="progress-bar w-100 bg-success" role="progressbar" aria-valuenow="100%" aria-valuemin="0%" aria-valuemax="100%">100%</div>
+</div>
+<br>
+<br>
+<!-- Bootstrap progress end -->
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
